@@ -228,7 +228,7 @@ bool init_gt911_with_probe(int sda_pin, int scl_pin) {
  */
 void setup(void) {
   USBSerial.begin(115200); /* prepare for possible serial debug */
-  while (millis() < 5000)
+  while (millis() < 3000)
     ; // pour permettre l'affichage sur l'USB
 
   // Wire.begin(DEFAULT_I2C_SDA, DEFAULT_I2C_SCL);
